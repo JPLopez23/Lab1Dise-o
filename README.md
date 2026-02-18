@@ -3,7 +3,7 @@
 Este proyecto contiene una serie de analizadores léxicos desarrollados en Flex para el reconocimiento de tokens en lenguajes como Java y Rust.
 
 ## Requisitos en Ubuntu 
-Asegúrate de tener instaladas las herramientas de desarrollo:
+Tener instaladas las herramientas de desarrollo:
 sudo apt update
 sudo apt install flex gcc make -y
 
