@@ -1,0 +1,87 @@
+// Test file for Java lexer
+// This file contains various Java constructs to test the lexer
+
+public class TestClass {
+    // Variables con diferentes tipos
+    private int contador = 0;
+    private float precio = 99.99;
+    private double cientifico = 1.5e10;
+    private int hexadecimal = 0xFF;
+    
+    // String con escape sequences
+    private String mensaje = "Hola\nmundo\t\"Flex\"";
+    private String path = "C:\\Users\\test\\file.txt";
+    
+    /* Comentario multilínea
+       que abarca varias líneas
+       para probar el lexer */
+    
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        int suma = x + y;
+        
+        // Operadores relacionales
+        if (x == y) {
+            System.out.println("Iguales");
+        } else if (x != y) {
+            System.out.println("Diferentes");
+        }
+        
+        // Operadores lógicos
+        boolean resultado = (x > 5) && (y < 30);
+        boolean otro = (x <= 10) || (y >= 20);
+        
+        // Loops
+        for (int i = 0; i < 10; i++) {
+            suma += i;
+        }
+        
+        while (x < 100) {
+            x++;
+        }
+        
+        // Switch
+        switch (x) {
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                break;
+        }
+    }
+    
+    // Método con parámetros
+    public int calcular(int a, int b) {
+        return a * b + (a - b) / 2;
+    }
+}
+
+// Identificadores válidos
+variable
+_temporal
+contador123
+miVariable
+_
+__interno__
+
+// Números
+42
+3.14159
+2.5e-3
+0xDEADBEEF
+0xCAFE
+
+// Operadores
++ - * /
+== != < > <= >=
+&& || !
+= += -= *= /=
+++ --
+
+// Strings
+"simple string"
+"string with \"quotes\""
+"string with\nnewline"
+"string with\ttab"
